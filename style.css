@@ -13,13 +13,14 @@ body{
 }
 
 .gg {
-    height: 1000px;
+    height: 1200px;
     /* background: #000; */
     margin-bottom: 20px;
 }
 
 .Title_page {
     text-align: center;
+    margin-top: 10%;
     
 }
 
