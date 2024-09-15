@@ -1,17 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.container-footer{
-
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
 .gg {
     height: 1200px;
     /* background: #000; */
