@@ -1344,19 +1344,6 @@ General Styles - Owlcarousel
   font-size: 48px;
 }
 
-
-
-/* Landing Page Header */
-.landing-header:before {
-  position: absolute;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(119, 47, 109, 0.52) 95%, rgba(115, 35, 105, 0.58) 100%);
-  content: " ";
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
 /* Content box */
 .content-box {
   margin: 20px 0;
@@ -1392,148 +1379,31 @@ General Styles - Owlcarousel
   padding: 50px 0px;
 }
 
+/* term of privacy page */
 
+.logo-bu-term{
+  background: #000;
+  border-radius: 50px;
+  width: 10%;
+  padding: 10px;
+}
 
+.service-header {
+  margin-bottom: 5%;
+}
 
+.service_sub-header {
+  margin-bottom: 1%;
+}
 
-
+.service_body {
+  margin-bottom: 3%;
+}
 
 @media (min-width: 768px) {
   .comment .comment {
     margin-left: 75px;
   }
-}
-
-/*--------------------------------------------------------------
-	Client
---------------------------------------------------------------*/
-.client-logo {
-  opacity: .5;
-}
-
-.client-logo:hover {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-	Shop Items
---------------------------------------------------------------*/
-.shop-item {
-  text-align: center;
-  margin: 0 0 40px;
-}
-
-.shop-item-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.shop-item-image img {
-  width: 100%;
-}
-
-.shop-item-detail,
-.shop-item-image:after {
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.shop-item-image:after {
-  position: absolute;
-  display: block;
-  content: "";
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.shop-item-detail {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 100%;
-  padding: 20px;
-  opacity: 0;
-  z-index: 2;
-  text-align: center;
-  font-size: 12px;
-  color: #aaa;
-}
-
-.shop-item-title {
-  font-weight: 400;
-  font-size: 14px;
-  color: #111;
-  margin: 15px 0 5px;
-}
-
-/* Shop item hover */
-.shop-item:hover .shop-item-image:after {
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.shop-item:hover .shop-item-detail {
-  opacity: 1;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* -------------------------------------------------------------------
-	Exclusive products
-------------------------------------------------------------------- */
-.ex-product {
-  opacity: .7;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.ex-product:hover {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-	Shop Single Product
---------------------------------------------------------------*/
-.product-gallery {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  margin: 10px 0 0;
-}
-
-.product-gallery li {
-  display: inline-block;
-  width: 15%;
-  margin: 0 5px;
-}
-
-.product-gallery li:first-child {
-  margin-left: 0;
-}
-
-.product-title {
-  margin: 0 0 20px;
-  color: #111;
-}
-
-.star,
-.star-off {
-  margin-bottom: 5px;
-  color: #f1c40f;
-}
-
-.star-off {
-  color: #e5e5e5;
-}
-
-.amount {
-  font-size: 32px;
-  color: #111;
-}
-
-.reviews {
-  margin: 0;
 }
 
 /*--------------------------------------------------------------
