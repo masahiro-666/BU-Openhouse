@@ -1357,6 +1357,22 @@ General Styles - Owlcarousel
   margin: 16px 0 15px;
 }
 
+/* Sponsor image */
+.sponsor-image{
+  margin-top: 20px;
+  width: 200px;
+}
+
+.sponsor-box-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sponsor-box-title{
+  text-align: center;
+}
 
 /* Call to action */
 .callout-text {
