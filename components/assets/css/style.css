@@ -1417,13 +1417,8 @@ General Styles - Owlcarousel
   font-size: 30px;
 }
 
-.flip-card-front {
-  background-color: #000;
-  color: #fff;
-}
-
 .flip-card-back {
-  background-color: #000;
+  background-color: #111;
   color: #fff;
   padding: 20px;
   transform: rotateY(180deg);
