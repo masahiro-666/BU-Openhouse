@@ -1357,10 +1357,21 @@ General Styles - Owlcarousel
   margin: 16px 0 15px;
 }
 
-/* Sponsor image */
+/* Sponsor Page*/
+
+.sponsor-box{
+  font-family: "Roboto Condensed", sans-serif;
+  color: #111;
+}
+
 .sponsor-image{
   margin-top: 20px;
   width: 200px;
+  border-radius: 16px;
+}
+
+.sponsor-image:hover {
+  filter: brightness(0.9);
 }
 
 .sponsor-box-image{
@@ -1372,6 +1383,11 @@ General Styles - Owlcarousel
 
 .sponsor-box-title{
   text-align: center;
+}
+
+.cooperate-title{
+  font-size: 16px;
+  color: #666;
 }
 
 /* Call to action */
