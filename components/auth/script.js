@@ -3,6 +3,9 @@ const signInButton=document.getElementById('signInButton');
 const signInForm=document.getElementById('signIn');
 const signUpForm=document.getElementById('signup');
 
+const loginHome=document.getElementById('login')
+    const logoutHome=document.getElementById('logout')
+
 signUpButton.addEventListener('click',function(){
     signInForm.style.display="none";
     signUpForm.style.display="block";

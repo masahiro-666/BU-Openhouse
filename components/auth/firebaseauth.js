@@ -20,7 +20,7 @@
 
  function showMessage(message, divId){
     var messageDiv=document.getElementById(divId);
-    messageDiv.style.display="block";
+    // messageDiv.style.display="block";
     messageDiv.innerHTML=message;
     messageDiv.style.opacity=1;
     setTimeout(function(){
@@ -29,6 +29,7 @@
  }
  const signUp=document.getElementById('submitSignUp');
  signUp.addEventListener('click', (event)=>{
+    console.log("sign up click");
     event.preventDefault();
     const email=document.getElementById('rEmail').value;
     const password=document.getElementById('rPassword').value;
@@ -50,7 +51,7 @@
         const docRef=doc(db, "users", user.uid);
         setDoc(docRef,userData)
         .then(()=>{
-            window.location.href='index.html';
+            window.location.href='registration_page.html';
         })
         .catch((error)=>{
             console.error("error writing document", error);
@@ -70,6 +71,7 @@
 
  const signIn=document.getElementById('submitSignIn');
  signIn.addEventListener('click', (event)=>{
+    console.log("sign in click");
     event.preventDefault();
     const email=document.getElementById('email').value;
     const password=document.getElementById('password').value;
@@ -86,6 +88,7 @@
         const errorCode=error.code;
         if(errorCode==='auth/invalid-credential'){
             showMessage('Incorrect Email or Password', 'signInMessage');
+
         }
         else{
             showMessage('Account does not Exist', 'signInMessage');
