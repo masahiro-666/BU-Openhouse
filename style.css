@@ -33,3 +33,12 @@
     padding-top: 50px;
 }
 
+.align-middle li{
+    padding-left: px;
+}
+
+.Question_Anwser{
+    text-align: left;
+    padding-left: 25%;
+    padding-right: 25%;
+}
