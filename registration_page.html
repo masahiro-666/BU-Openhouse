@@ -34,11 +34,11 @@
       <div id="navbar"></div>
       
       <div class="main">
-        <section class="module bg-dark-30" data-background="assets/images/section-4.jpg">
+        <section class="module bg-dark-30" data-background="components/images/bu_3_diamond.jpg">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h1 class="module-title font-alt mb-0">Login-Register</h1>
+              <div class="col-sm-8 col-sm-offset-2">
+                <h1 class="module-title titan-title-size-4 font-alt mb-0">welcome back</h1>
               </div>
             </div>
           </div>
@@ -48,118 +48,73 @@
           <div class="container">
             <div class="row">
 
-              <!-- <div class="col-sm-5 col-sm-offset-1 mb-sm-40" id="signIn">
+              <div class="col-sm-6 col-sm-offset-3" id="signIn" >
                 <h4 class="font-alt">SIGN IN</h4>
                 <hr class="divider-w mb-10">
-                <form class="form">
+                <form method="post" class="form">
                   <div id="signInMessage" class="messageDiv" style="display:none;"></div>
-
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" name="email" placeholder="Email" required/>
+                    <input class="form-control" id="email" type="email" placeholder="Email" required/>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="password" type="password" name="password" placeholder="Password" required/>
+                    <input class="form-control" id="password" type="password" placeholder="Password" required/>
                   </div>
                   <div class="form-group">
                     <button class="btn btn-round btn-b" id="submitSignIn">SIGN IN</button>
                   </div>
-                  <div class="form-group"><a href="">Forgot Password?</a></div>
                 </form>
-              </div> -->
+              </div>
 
-              <!-- <div class="col-sm-5" id="signup" >
+              <div class="col-sm-6 col-sm-offset-3" id="signup" style="display:none;">
                 <h4 class="font-alt">SIGN UP</h4>
                 <hr class="divider-w mb-10">
                 <form class="form">
                   <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
-
                   <div class="form-group">
-                    <input class="form-control" id="rEmail" type="text" name="email" placeholder="Email" required/>
+                    <input class="form-control" id="rEmail" type="email" placeholder="Email" required/>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="fName" type="text" name="fName" placeholder="First Name" required/>
+                    <input class="form-control" id="fName" type="text" placeholder="First Name" required/>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="lName" type="text" name="fName" placeholder="Last Name" required/>
+                    <input class="form-control" id="lName" type="text" placeholder="Last Name" required/>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="rPassword" type="password" name="password" placeholder="Password" required/>
+                    <input class="form-control" id="rPassword" type="password" placeholder="Password" required/>
                   </div>
                   <div class="form-group">
-                    <button class="btn btn-block btn-round btn-b" id="submitSignUp">SIGN UP</button>
+                    <button class="btn btn-round btn-b" id="submitSignUp">SIGN UP</button>
                   </div>
                 </form>
-              </div> -->
-              <div class="col-sm-12 col-sm-offset-1 mb-sm-40">
-                <div class="container" id="signup" style="display:none;">
-                  <h1 class="form-title">Register</h1>
-                  <form method="post" action="">
-                    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
-                    <div class="input-group">
-                      <i class="fas fa-user"></i>
-                      <input type="text"  id="fName" placeholder="First Name" required>
-                      <label for="fname">First Name</label>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-user"></i>
-                        <input type="text"  id="lName" placeholder="Last Name" required>
-                        <label for="lName">Last Name</label>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email"  id="rEmail" placeholder="Email" required>
-                        <label for="rEmail">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" id="rPassword"  placeholder="Password" required>
-                        <label for="rPassword">Password</label>
-                    </div>
-                  <button class="btn" id="submitSignUp" >Sign Up</button>
-                  </form>
-                  <div class="links">
-                    <p>Already Have Account ?</p>
-                    <button id="signInButton">Sign In</button>
-                  </div>
-                </div>
-            
-
-                <div class="container" id="signIn">
-                  <h1 class="form-title">Sign In</h1>
-                  <form method="post" action="">
-                    <div id="signInMessage" class="messageDiv" style="display:none;"></div>
-          
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email"  id="email" placeholder="Email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-lock"></i>
-                      <input type="password" id="password"  placeholder="Password" required>
-                        <label for="password">Password</label>
-                    </div>
-                    <p class="recover">
-                      <a href="#">Recover Password</a>
-                    </p>
-                  <button  class="btn"  id="submitSignIn">Sign In</button>
-                  </form>
-                  <div class="links">
-                    <p>Don't have account yet?</p>
-                    <button id="signUpButton">Sign Up</button>
-                  </div>
-                </div>
-
               </div>
-              
+              <div class="col-sm-3"></div>
             </div>
-          </div>
-          <div class="icons">
-            <i id="google-login-btn" class="fab fa-google"></i>
-          </div>
+
+            <div class="row" style="background: #fff;">
+              <div class="text-center" id="toSignUp">
+                <p class="font-alt-2">Don't have account yet?</p>
+                <button class="btn btn-round btn-g" id="signUpButton">Sign Up</button>
+              </div>
+    
+              <div class="text-center" id="toSignIn" style="display:none;">
+                <p class="font-alt-2">Already Have Account?</p>
+                <button class="btn btn-round btn-g" id="signInButton">Sign In</button>
+              </div>
+    
+              <div class="icons text-center">
+                <div class="divider-container">
+                  <hr class="divider-line">
+                  <p class="divider-text">OR</p>
+                  <hr class="divider-line">
+                </div>
+                <i id="google-login-btn" class="fab fa-google icons-google" data-toggle="tooltip" data-placement="right" title="Sign In With Google"></i>
+              </div>
+            </div>
         </section>
-        
       </div>
+      <section class="module-extra-small bg-dark">
+        <div id="footer"></div>
+      </section>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
 
@@ -184,5 +139,11 @@
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
         });
+
+    fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
   </script>
 </html>
