@@ -93,6 +93,7 @@ googleLogin.addEventListener("click", function() {
     .then((result) => {
         const user = result.user;
         localStorage.setItem('loggedInUserId', user.uid);
+        const email = document.getElementById('rEmail').value;
         console.log(user);
         window.location.href = "homepage.html";
     })

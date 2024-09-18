@@ -36,7 +36,12 @@ onAuthStateChanged(auth, (user) => {
                 loginBtn.style.display = 'none';
                 logoutBtn.style.display = 'inline-block';
             } else {
-                console.log("No user document found in Firestore");
+                document.getElementById('loggedUserFName').innerText = user.displayName.split(" ")[0];
+                document.getElementById('loggedUserEmail').innerText = user.email;
+                document.getElementById('loggedUserLName').innerText = user.displayName.split(" ")[1]|| "";
+
+                loginBtn.style.display = 'none';
+                logoutBtn.style.display = 'inline-block';
             }
         })
         .catch((error) => {
