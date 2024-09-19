@@ -1,5 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
+import {collection, getFirestore, setDoc, doc, addDoc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+import { updateDoc, serverTimestamp } from "/firebase/firestore";
+
+
 
 // Firebase configuration
 const firebaseConfig = {
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   contactForm.addEventListener('submit', async function (e) {
     e.preventDefault();
-
+    console.log('server time: '+ServerValue.TIMESTAMP);
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -34,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         name: name,
         email: email,
         message: message,
-        timestamp: serverTimestamp()
+        // timestamp: serverTimestamp()
       });
       console.log('send');
       contactForm.reset();
