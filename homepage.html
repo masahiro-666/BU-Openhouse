@@ -25,7 +25,19 @@
       <script type="module" src="/components/auth/homepage.js"></script>
       <script type="module" src="/components/auth/script.js"></script>
 
-
+      <script>
+        fetch("components/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+                document.querySelector(".navbar").classList.add("navbar-transparent");
+            });
+        fetch("components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+      </script>
     </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -33,18 +45,24 @@
         <div class="loader">Loading...</div>
       </div>
 
-      <div id="navbar"></div>
+      <div id="navbar" ></div>
       
-      <section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="components/images/banner_3.jpg">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1" >HELLO & WELCOME</div>
-            <div class="font-alt mb-40 titan-title-size-4">BU OPEN HOUSE</div>
+        <section class="home-section home-full-height bg-dark-30" id="home">
+          <div class="video-player" data-property="{videoURL:'https://youtu.be/zxoA1JU0LFQ?si=2ivthL3pKskj60nB', containment:'.home-section', startAt:1, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+          <div class="video-controls-box">
+            <div class="container">
+              <div class="video-controls"><a class="fa fa-volume-off" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+            </div>
           </div>
-        </div>
-        
-      </section>
-      <div class="main showcase-page">
+          <div class="titan-caption">
+            <div class="caption-content">
+              <div class="font-alt mb-30 titan-title-size-1" >HELLO & WELCOME</div>
+              <div class="font-alt mb-40 titan-title-size-5">BU OPEN HOUSE 2077</div>
+              <a class="section-scroll btn btn-border-w btn-round" href="#main">More</a>
+            </div>
+          </div>
+        </section>
+      <div class="main showcase-page" id="main">
         <section class="module-extra-small bg-dark">
           <div class="container">
             <div class="row">
@@ -63,6 +81,7 @@
             </div>
           </div>
         </section>
+        
         <section class="module-medium" id="demos">
           <div class="container">
             <div class="row multi-columns-row">
@@ -167,16 +186,5 @@
   <script src="components/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
   <script src="components/assets/js/plugins.js"></script>
   <script src="components/assets/js/main.js"></script>
-  <script>
-    fetch("components/nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-        });
-    fetch("components/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
-  </script>
+  
 </html>

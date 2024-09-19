@@ -1,6 +1,8 @@
 console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
 
-/* Preloader */
+/* ---------------------------------------------- /*
+ * Preloader
+ /* ---------------------------------------------- */
 (function(){
     $(window).on('load', function() {
         $('.loader').fadeOut();
@@ -9,7 +11,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
     $(document).ready(function() {
 
-        /* WOW Animation When Scroll */
+        /* ---------------------------------------------- /*
+         * WOW Animation When You Scroll
+         /* ---------------------------------------------- */
 
         wow = new WOW({
             mobile: false
@@ -17,7 +21,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         wow.init();
 
 
-        /* Scroll top */
+        /* ---------------------------------------------- /*
+         * Scroll top
+         /* ---------------------------------------------- */
 
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
@@ -33,7 +39,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         });
 
 
-        /* Initialization General Scripts for all pages */
+        /* ---------------------------------------------- /*
+         * Initialization General Scripts for all pages
+         /* ---------------------------------------------- */
 
         var homeSection = $('.home-section'),
             navbar      = $('.navbar-custom'),
