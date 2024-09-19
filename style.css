@@ -10,6 +10,19 @@
     
 }
 
+.color-box {
+    width: 300px;
+    height: 200px;
+    background-color: #7f99aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 20px auto; /* จัดให้อยู่ตรงกลางของหน้า */
+}
+
 #Scedule_img {
     padding-top: 40px;
     padding-bottom: 40px;
