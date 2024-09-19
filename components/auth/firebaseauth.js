@@ -24,6 +24,8 @@ function showMessage(message, divId){
     messageDiv.style.opacity = 1;
     setTimeout(function(){
         messageDiv.style.opacity = 0;
+        document.getElementById('signInMessage').style.display="none";
+        document.getElementById('signUpMessage').style.display="none";
     }, 5000);
 }
 
@@ -43,6 +45,9 @@ signUp.addEventListener('click', (event) => {
             firstName: firstName,
             lastName: lastName
         };
+
+        document.getElementById('signUpMessage').style.display="block";
+        document.querySelector(".signUpMessage").classList.add("alert-success");
         showMessage('Account Created Successfully', 'signUpMessage');
         const docRef = doc(db, "users", user.uid);
         setDoc(docRef, userData)
@@ -57,8 +62,14 @@ signUp.addEventListener('click', (event) => {
     .catch((error) => {
         const errorCode = error.code;
         if (errorCode === 'auth/email-already-in-use') {
-            showMessage('Email Address Already Exists !!!', 'signUpMessage');
+            console.log('Email Address Already Exists!');
+            document.getElementById('signUpMessage').style.display="block";
+            document.querySelector(".signUpMessage").classList.add("alert-danger");
+            showMessage('Email Address Already Exists!', 'signUpMessage');
         } else {
+            console.log('Unable to create User');
+            document.getElementById('signUpMessage').style.display="block";
+            document.querySelector(".signUpMessage").classList.add("alert-danger");
             showMessage('Unable to create User', 'signUpMessage');
         }
     });
@@ -74,14 +85,23 @@ signIn.addEventListener('click', (event) => {
     .then((userCredential) => {
         const user = userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        showMessage('Login is successful', 'signInMessage');
+
+        document.getElementById('signInMessage').style.display="block";
+        document.querySelector(".signInMessage").classList.add("alert-success");
+        showMessage('Sign In successful', 'signInMessage');
         window.location.href = 'homepage.html';
     })
     .catch((error) => {
         const errorCode = error.code;
         if (errorCode === 'auth/invalid-credential') {
+            console.log('Incorrect Email or Password');
+            document.getElementById('signInMessage').style.display="block";
+            document.querySelector(".signInMessage").classList.add("alert-danger");
             showMessage('Incorrect Email or Password', 'signInMessage');
         } else {
+            console.log('Account does not Exist');
+            document.getElementById('signInMessage').style.display="block";
+            document.querySelector(".signInMessage").classList.add("alert-danger");
             showMessage('Account does not Exist', 'signInMessage');
         }
     });
@@ -95,6 +115,9 @@ googleLogin.addEventListener("click", function() {
         localStorage.setItem('loggedInUserId', user.uid);
         const email = document.getElementById('rEmail').value;
         console.log(user);
+        document.getElementById('signInMessage').style.display="block";
+        document.querySelector(".signInMessage").classList.add("alert-success");
+        showMessage('Sign In successful', 'signInMessage');
         window.location.href = "homepage.html";
     })
     .catch((error) => {

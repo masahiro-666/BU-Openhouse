@@ -1594,6 +1594,21 @@ General Styles - Owlcarousel
   color: #777;
 }
 
+#signIn, #signup {
+  position: relative;
+}
+
+#signInMessage, #signUpMessage {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  z-index: 10;
+  display: none;
+}
+
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
