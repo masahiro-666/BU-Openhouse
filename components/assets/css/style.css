@@ -203,6 +203,7 @@ a,
   padding: 140px 60px 140px;
 }
 
+
 /* Dark background */
 .bg-dark,
 .bg-dark-30,
@@ -1328,6 +1329,18 @@ General Styles - Owlcarousel
   background-size: cover;
 }
 
+/* .more-btn{
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+} */
+
+/* #home {
+  margin-top: 50px;
+} */
+
 .titan-title-size-1 {
   letter-spacing: 4px;
   font-size: 15px;
@@ -1403,8 +1416,22 @@ General Styles - Owlcarousel
   color: #666;
 }
 
-/* Flip card */
+/* Video */
+.video-controls-box {
+  position: absolute !important;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
 
+.video-controls-box a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 5px 0 0;
+}
+
+/* Flip card */
 .flip-card {
   position: relative;
   width: 350px;
