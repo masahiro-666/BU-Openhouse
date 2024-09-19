@@ -10,20 +10,179 @@
 
   </head>
   <body>
-    <div id="navbar"></div>
-    <div class="gg"></div>
-    <div id="footer"></div>
-  </body>
-  <script>
-    fetch("components/nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-        });
-    fetch("components/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
-  </script>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #ffffff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .method-icon {
+            font-size: 50px;
+            color: #007bff;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+    </style>
+    
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     <img src="logo_bu.B5Fc9ReW.png" alt="Bangkok University Logo">
+     <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">WORKSHOP AND ACTIVITYS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ABOUT THE OPEN HOUSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+
+        
+                <a class="nav-link active" aria-current="page" href="#">SPONSORS</a>
+              </li>
+         
+          
+         
+      </div>
+    
+</div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+<h1 class="text-center mb-5">การเดินทางมายัง ม.กรุงเทพ เขตรังสิต และ แผนที่มหาวิทยาลัย</h1>
+
+<!-- Travel by Car -->
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <span class="method-icon">🚗</span>
+            </div>
+            <div class="col-md-10">
+                <h3>เดินทางโดยรถยนต์</h3>
+                <p>
+                    หากเดินทางโดยรถยนต์ส่วนตัว สามารถใช้ถนนพหลโยธิน (ทางหลวงหมายเลข 1) ขับไปทางทิศเหนือ และเลี้ยวขวาเข้าสู่มหาวิทยาลัยกรุงเทพเขตรังสิตได้โดยตรง 
+                    มหาวิทยาลัยตั้งอยู่ใกล้ทางด่วนโทลล์เวย์ ซึ่งทำให้สะดวกต่อการเดินทาง
+                    มีที่จอดรถบริการสำหรับนักศึกษาและผู้เยี่ยมชม
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Travel by BTS -->
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <span class="method-icon">🚆</span>
+            </div>
+            <div class="col-md-10">
+                <h3>เดินทางโดยรถไฟฟ้า BTS</h3>
+                <p>
+                    หากเดินทางโดยรถไฟฟ้า BTS สายสีเขียว ให้ลงที่สถานี "มหาวิทยาลัยธรรมศาสตร์" ซึ่งเป็นสถานีที่ใกล้ที่สุด 
+                    จากนั้นสามารถเดินทางต่อด้วยรถสองแถวหรือแท็กซี่มายังมหาวิทยาลัยกรุงเทพได้
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Travel by MRT -->
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <span class="method-icon">🚇</span>
+            </div>
+            <div class="col-md-10">
+                <h3>เดินทางโดยรถไฟฟ้า MRT</h3>
+                <p>
+                    สามารถเดินทางด้วย MRT สายสีน้ำเงิน ลงที่สถานี "บางซื่อ" แล้วต่อรถโดยสารประจำทางสาย 29, 39 หรือ 510 ซึ่งจะผ่านหน้ามหาวิทยาลัยกรุงเทพเขตรังสิต
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Travel by Bus -->
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <span class="method-icon">🚌</span>
+            </div>
+            <div class="col-md-10">
+                <h3>เดินทางโดยรถประจำทาง</h3>
+                <p>
+                    สายรถประจำทางที่ผ่านมหาวิทยาลัยกรุงเทพเขตรังสิต ได้แก่
+                    <ul>
+                        <li>สาย 29: จากอนุสาวรีย์ชัยสมรภูมิ ผ่านทางวิภาวดีรังสิต</li>
+                        <li>สาย 39: จากอนุสาวรีย์ชัยสมรภูมิ ไปยังรังสิต</li>
+                        <li>สาย 510: จากจตุจักร ไปยังรังสิต</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Maps Integration -->
+<div class="card">
+    <div class="card-body">
+        <h3 class="text-center">แผนที่มหาวิทยาลัย</h3>
+        <div class="text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.637133811969!2d100.61278967602564!3d14.039510686383052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1726526689270!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>               
+       
+        </div>
+    </div>
+</div>
+
+</div>
+
+<h1 class="text-center mb-5">แผนที่ภายใน มหาวิทยาลัยกรุงเทพ</h1>
+
+<!-- การใส่รูปภาพ -->
+ 
+<img src="1553225623_EWOIR0LF0M.png" alt="แผนที่ในมหาวิทยาลัย" >
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+<p>&copy; 2024 มหาวิทยาลัยกรุงเทพ เขตรังสิต. สงวนลิขสิทธิ์.</p>
+</footer>
+</body>
+<script>
+  fetch("components/nav.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("navbar").innerHTML = data;
+      });
+  fetch("components/footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("footer").innerHTML = data;
+      });
+</script>
 </html>
