@@ -5,7 +5,7 @@
   /* max-width: 1000px; */
   position: relative;
   margin: auto;
-  padding-top: 25%;
+  padding-top: 15%;
   
 }
 
@@ -14,34 +14,51 @@
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  
 }
+
+.mySlides h1{
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+}
+
+.mySlides h3{
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+}
+
 
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 65%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 36px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  /* background-color: #333; */
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 120px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 120px;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
 }
 
 /* Caption text */
@@ -89,4 +106,13 @@
 @keyframes fade {
   from {opacity: .9}
   to {opacity: .9}
+}
+
+/* Speaker profile pro */
+#Speaker_pro{
+  margin: auto;    
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
 }
