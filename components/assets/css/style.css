@@ -787,7 +787,7 @@ a,
 /* Forms common style */
 .form-control {
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
+
   letter-spacing: 2px;
   font-size: 11px;
   height: 33px;
@@ -864,6 +864,11 @@ blockquote {
 .font-alt {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.font-alt-2 {
+  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -1344,6 +1349,12 @@ General Styles - Owlcarousel
   font-size: 48px;
 }
 
+.titan-title-size-5 {
+  letter-spacing: 16px;
+  font-weight: 600;
+  font-size: 60px;
+}
+
 /* Content box */
 .content-box {
   margin: 20px 0;
@@ -1512,6 +1523,54 @@ General Styles - Owlcarousel
   transform: translate3d(0, -10px, 0);
   -webkit-transform: translate3d(0, -10px, 0);
   box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Registration page */
+
+.registration-content{
+  display: flex;
+  background: #000;
+  width: 500px;
+  height: 500px;
+}
+
+#toSignUp, #toSignIn{
+  margin-top: 10px;
+}
+
+.icons i{
+  color: #111;
+  padding:2rem 2rem;
+  border-radius:16px;
+  font-size:3rem;
+  cursor:pointer;
+  border:2px solid #757575;
+  transition:1s;
+  margin-top: 10px;
+}
+.icons i:hover{
+  background:#07001f;
+  color: #fff;
+  border:2px solid #111;
+}
+
+.divider-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #eaeaea;
+}
+
+.divider-text {
+  margin: 0 30px;
+  white-space: nowrap;
+  color: #777;
 }
 
 /*--------------------------------------------------------------

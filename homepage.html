@@ -22,6 +22,10 @@
       <link href="components/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
       <!-- Main stylesheet and color file-->
       <link href="components/assets/css/style.css" rel="stylesheet">
+      <script type="module" src="/components/auth/homepage.js"></script>
+      <script type="module" src="/components/auth/script.js"></script>
+
+
     </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -34,10 +38,11 @@
       <section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="components/images/banner_3.jpg">
         <div class="titan-caption">
           <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">HELLO & WELCOME</div>
+            <div class="font-alt mb-30 titan-title-size-1" >HELLO & WELCOME</div>
             <div class="font-alt mb-40 titan-title-size-4">BU OPEN HOUSE</div>
           </div>
         </div>
+        
       </section>
       <div class="main showcase-page">
         <section class="module-extra-small bg-dark">
@@ -45,12 +50,15 @@
             <div class="row">
               <div class="col-sm-6 col-md-8 col-lg-9">
                 <div class="callout-text font-alt">
-                  <h4 style="margin-top: 0px; font-;">text1</h4>
-                  <p style="margin-bottom: 0px;">text2</p>
+                  <h4 style="margin-top: 0px; font-;"><span id="loggedUserFName"></span>&emsp;<span id="loggedUserLName"></span></h4>
+                  <p style="margin-bottom: 0px;" ><span id="loggedUserEmail"></span></p>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="callout-btn-box"><a class="btn btn-border-w btn-circle" href="/registration_page.html">Register</a></div>
+                <div class="callout-btn-box">
+                  <a class="btn btn-border-w btn-circle" id="login" href="registration_page.html">Sing in</a>
+                  <a class="btn btn-border-w btn-circle" id="logout" style="display:none;">Sign out</a>
+                </div>
               </div>
             </div>
           </div>

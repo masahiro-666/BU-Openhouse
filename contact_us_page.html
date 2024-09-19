@@ -1,20 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 248, 248); /* พื้นหลังของหน้าเว็บทั้งหมดเป็นสีดำ */
+            color: rgb(0, 0, 0); /* เปลี่ยนสีข้อความเป็นสีดำเพื่อให้มองเห็นได้ชัดเจนบนพื้นหลังสีดำ */
+        }
 
-  </head>
-  <body>
+        /* Header */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        
+        nav a {
+            color: rgb(243, 237, 237);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section with Image */
+        .main-image-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .main-image-section img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid rgb(252, 252, 252); /* ใส่เส้นขอบสีขาวรอบรูปภาพ */
+        }
+
+        /* Contact Form */
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .form-container {
+            flex: 1;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #cab8b8;
+            border-radius: 4px;
+            color: rgb(0, 0, 0); /* สีข้อความในฟอร์มเป็นสีดำ */
+        }
+
+        .form-container button {
+            background-color: rgb(5, 0, 0); /* ปุ่มสีขาว */
+            color: rgb(252, 252, 252); /* ข้อความบนปุ่มเป็นสีดำ */
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #bcc2e7;
+            color: rgb(0, 0, 0); /* เมื่อเอาเมาส์ชี้ที่ปุ่มให้เปลี่ยนเป็นสีขาว */
+        }
+
+        .additional-info {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        .additional-info h3 {
+            margin-bottom: 10px;
+            color: rgb(0, 0, 0); /* สีหัวข้อเป็นสีดำ */
+        }
+
+        .additional-info p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgb(0, 0, 0); /* สีข้อความเป็นสีดำ */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000000;
+            margin-top: 20px;
+            color: rgb(255, 249, 249);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+        <div class="logo">
+            <img src="logo_bu.B5Fc9ReW.png" alt="Bangkok University Logo">
+        </div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">WORKSHOP AND ACTIVITIES</a>
+            <a href="#">GALLERY</a>
+            <a href="#">ABOUT THE OPEN HOUSE</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">SPONSORS</a>
+        </nav>
+    </header>
+
     <div id="navbar"></div>
     <div class="gg"></div>
     <div id="footer"></div>
-  </body>
-  <script>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <!-- Form -->
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+                <textarea name="message" rows="5" placeholder="Your Message*" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="additional-info">
+            <h3>Additional Info</h3>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <h3>Business Hours</h3>
+            <p>Mo - Fr: 8am to 6pm<br>Sa, Su: 10am to 2pm</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Bangkok University Open House. All Rights Reserved.
+    </footer>
+
+</body>
+<script>
     fetch("components/nav.html")
         .then(response => response.text())
         .then(data => {
