@@ -80,7 +80,7 @@ signIn.addEventListener('click', (event) => {
     .catch((error) => {
         const errorCode = error.code;
         if (errorCode === 'auth/invalid-credential') {
-            showMessage('Incorrect Email or Password', 'signInMessage');
+            1('Incorrect Email or Password', 'signInMessage');
         } else {
             showMessage('Account does not Exist', 'signInMessage');
         }
