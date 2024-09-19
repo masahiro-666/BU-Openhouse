@@ -1495,6 +1495,12 @@ General Styles - Owlcarousel
   }
 }
 
+/* Contact Us Page */
+.contact-page-header {
+  background-position: 13% 45%;
+  background-repeat: no-repeat;
+}
+
 /*--------------------------------------------------------------
 	Showcase Page
 --------------------------------------------------------------*/
