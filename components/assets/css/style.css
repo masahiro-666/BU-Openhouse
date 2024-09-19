@@ -1607,6 +1607,12 @@ General Styles - Owlcarousel
   width: 20%;
   z-index: 10;
   display: none;
+  opacity: 0;
+  animation:fadeOut 7s forwards;
+}
+
+.eye {
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
