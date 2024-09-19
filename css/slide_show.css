@@ -5,7 +5,7 @@
   /* max-width: 1000px; */
   position: relative;
   margin: auto;
-  padding-top: 15%;
+  padding-top: 13%;
   
 }
 
@@ -100,12 +100,12 @@
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 999s;
+  animation-duration: 999999s;
 }
 
 @keyframes fade {
-  from {opacity: .9}
-  to {opacity: .9}
+  from {opacity: 0.9}
+  to {opacity: 0.9}
 }
 
 /* Speaker profile pro */
