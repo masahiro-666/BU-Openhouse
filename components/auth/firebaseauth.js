@@ -128,7 +128,7 @@ googleLogin.addEventListener("click", function() {
 
 document.getElementById('toggleSignInPassword').addEventListener('click', function() {
     const passwordField = document.getElementById('password');
-    const icon = this.querySelector('eye');
+    const icon = this.querySelector('i');
     if (passwordField.type === 'password') {
       passwordField.type = 'text';
       icon.classList.replace('fa-eye', 'fa-eye-slash');

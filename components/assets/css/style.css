@@ -1611,8 +1611,25 @@ General Styles - Owlcarousel
   animation:fadeOut 7s forwards;
 }
 
-.eye {
+.toggle-password {
+  position: absolute;
+
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
   cursor: pointer;
+  padding: 0;
+}
+
+#toggleSignInPassword {
+  right: 30px;
+  top: 60%;
+}
+
+#toggleSignUpPassword {
+  right: 30px;
+  top: 73%;
 }
 
 /*--------------------------------------------------------------
@@ -1654,6 +1671,16 @@ General Styles - Owlcarousel
   /* Comments */
   .comment .comment {
     margin-left: 75px;
+  }
+
+  #toggleSignInPassword {
+    right: 30px;
+    top: 60%;
+  }
+  
+  #toggleSignUpPassword {
+    right: 30px;
+    top: 73%;
   }
 }
 
@@ -1709,5 +1736,15 @@ General Styles - Owlcarousel
   .navbar-custom .dropdown-menu .dropdown.open .dropdown-toggle:after {
     right: 7px;
     content: "\f106";
+  }
+
+  #toggleSignInPassword {
+    right: 30px;
+    top: 64%;
+  }
+  
+  #toggleSignUpPassword {
+    right: 30px;
+    top: 76%;
   }
 }
