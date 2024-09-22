@@ -951,15 +951,6 @@ blockquote {
   margin-bottom: 40px;
 }
 
-.free-trial {
-  background-color: rgba(88, 20, 158, 0.9);
-  color: #FFFFFF;
-}
-
-.free-trial .color-golden {
-  color: #e6af4b;
-}
-
 /*  Special Portfolio Page  */
 .special-portfolio-header-title {
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -1188,6 +1179,7 @@ General Styles - Owlcarousel
   animation: load 0.8s infinite linear;
 }
 
+
 .loader,
 .loader:after {
   border-radius: 50%;
@@ -1216,6 +1208,7 @@ General Styles - Owlcarousel
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 	Navbar
@@ -1366,6 +1359,8 @@ General Styles - Owlcarousel
 }
 
 .titan-title-size-5 {
+  text-shadow: 4px 0px 11px rgba(0,0,0,0.37);
+  color: #fff;
   letter-spacing: 16px;
   font-weight: 600;
   font-size: 60px;
@@ -1444,7 +1439,8 @@ General Styles - Owlcarousel
 }
 
 .flip-card-back {
-  background-color: #111;
+  background: rgb(10,10,10);
+  background: radial-gradient(circle, rgba(10,10,10,1) 0%, rgba(73,73,73,1) 81%, rgba(74,74,74,1) 98%);
   color: #fff;
   padding: 20px;
   transform: rotateY(180deg);
@@ -1681,6 +1677,10 @@ General Styles - Owlcarousel
   #toggleSignUpPassword {
     right: 30px;
     top: 73%;
+  }
+
+  .about-logo{
+    margin-bottom: 200px;
   }
 }
 
