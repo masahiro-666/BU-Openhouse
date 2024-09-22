@@ -125,3 +125,27 @@ googleLogin.addEventListener("click", function() {
         const errorMessage = error.message;
     });
 });
+
+document.getElementById('toggleSignInPassword').addEventListener('click', function() {
+    const passwordField = document.getElementById('password');
+    const icon = this.querySelector('i');
+    if (passwordField.type === 'password') {
+      passwordField.type = 'text';
+      icon.classList.replace('fa-eye', 'fa-eye-slash');
+    } else {
+      passwordField.type = 'password';
+      icon.classList.replace('fa-eye-slash', 'fa-eye');
+    }
+  });
+
+  document.getElementById('toggleSignUpPassword').addEventListener('click', function() {
+    const passwordField = document.getElementById('rPassword');
+    const icon = this.querySelector('i');
+    if (passwordField.type === 'password') {
+      passwordField.type = 'text';
+      icon.classList.replace('fa-eye', 'fa-eye-slash');
+    } else {
+      passwordField.type = 'password';
+      icon.classList.replace('fa-eye-slash', 'fa-eye');
+    }
+  });
