@@ -67,52 +67,85 @@
       </div>
       <div id="navbar"></div>
       <section>
-        <div class="gg">
-          <div class="Title_page">
-            <h4>Welcome to</h4>
-            <h1 style="font-size: 64px;">BU OPEN HOUSE</h1>
-            <h4>2024</h4>
-            <div class="col-sm-auto">
-              <div class="bg-image" style="background-repeat: no-repeat; background-image: url('components/images/bu_diamond.jpg'); height: 57vh;">
-                <div class="col-sm-auto" style="margin: auto; padding-top: 150px;">
+        <div
+          class="container text-center"
+          style="width: 100%; padding: 0 !important; margin: 0 !important"
+        >
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12" style="padding-top: 5%">
+              <h4>Welcome to</h4>
+              <h1 style="font-size: 64px">BU OPEN HOUSE</h1>
+              <h4>2024</h4>
+            </div>
+
+            <div class="Title_page">
+              <div class="col-sm-12">
+                <div
+                  class="bg-image"
+                  style="
+                    background-repeat: no-repeat;
+                    background-image: url('components/images/bu_diamond.jpg');
+                    height: 57vh;
+                  "
+                >
+                  <div
+                    class="col-sm-auto"
+                    style="margin: auto; padding-top: 150px"
+                  >
                     <h1 class="font-alt mb-40 titan-title-size-5">
                       What is BU Open House
                     </h1>
-
                   </div>
                 </div>
-
-                <div class="info-open-house">
+              </div>
+              <div class="col-sm-8">
+                <div class="col-sm-auto">
+                  <div class="info-open-house">
                     <div class="col-8 col-sm-8">
                       <blockquote class="blockquote">
-                        <p class="lh-1" style="font-size: 20px;">
-                          About Our Open House
-                          
-                          Our University Open House is an exciting opportunity for prospective students and their families to explore everything we have to offer. During this event, you’ll have the chance to tour our beautiful campus, meet with faculty and current students, and get a firsthand look at our vibrant academic and student life.
-                          
-                          Whether you're exploring academic programs, seeking information about admissions, or simply curious about life at our university, the Open House provides an interactive experience that will help you envision yourself as part of our community. You can attend presentations on various degree programs, participate in hands-on workshops, and get answers to all your questions about financial aid, student services, and campus activities.</p>
+                        <p class="lh-1" style="font-size: 20px">
+                          About Our Open House Our University Open House is an
+                          exciting opportunity for prospective students and their
+                          families to explore everything we have to offer. During this
+                          event, you’ll have the chance to tour our beautiful campus,
+                          meet with faculty and current students, and get a firsthand
+                          look at our vibrant academic and student life. Whether
+                          you're exploring academic programs, seeking information
+                          about admissions, or simply curious about life at our
+                          university, the Open House provides an interactive
+                          experience that will help you envision yourself as part of
+                          our community. You can attend presentations on various
+                          degree programs, participate in hands-on workshops, and get
+                          answers to all your questions about financial aid, student
+                          services, and campus activities.
+                        </p>
                       </blockquote>
                     </div>
                   </div>
-                    <div class="col-8 col-sm-4">
-                      <img src="components\images\about_img.jpg" alt="" style="border-radius: 20px;">
-                    </div>
-                  </div>
                 </div>
+              </div>
 
-                <!-- <div class="col-sm-12">
-                  <img style="width: 90px; height: 90px; margin: auto; display: block;" src="components\images\university_logo_2.jpg" alt="">
+              <div class="col-sm-4">
+                <div class="col-8 col-sm-4">
+                  <img
+                    src="components\images\about_img.jpg"
+                    alt=""
+                    style="border-radius: 20px"
+                  />
                 </div>
-              </div> -->
               </div>
             </div>
           </div>
+
+          
         </div>
       </section>
       <section class="module-extra-small bg-dark">
         <div id="footer"></div>
       </section>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+      <div class="scroll-up">
+        <a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+      </div>
     </main>
   </body>
   <script src="components/assets/lib/jquery/dist/jquery.js"></script>
@@ -139,7 +172,5 @@
       .then((data) => {
         document.getElementById("footer").innerHTML = data;
       });
-
-
   </script>
 </html>
