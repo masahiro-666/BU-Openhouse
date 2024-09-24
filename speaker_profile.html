@@ -284,13 +284,13 @@
   <script src="components/assets/js/main.js"></script>
   <script src="js_speaker_profiel\slide_show.js"></script>
   <script>
-    fetch("components/nav")
+    fetch("components/nav.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("navbar").innerHTML = data;
       });
 
-    fetch("components/footer")
+    fetch("components/footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;

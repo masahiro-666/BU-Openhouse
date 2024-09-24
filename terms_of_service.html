@@ -63,7 +63,7 @@
           <h4 class="service_sub-header">9. Governing Law</h4>
           <h4 class="service_body">These Terms of Service shall be governed by the laws of Thailand, and any disputes arising from participation in the Open House shall be subject to the jurisdiction of courts in Bangkok.</h4>
           <h4 class="service_sub-header">10. Contact Information</h4>
-          <h4 class="service_body">For any questions or concerns regarding these Terms of Service, please contact us at <a href="contact_us_page">CONTACT US</a></h4>
+          <h4 class="service_body">For any questions or concerns regarding these Terms of Service, please contact us at <a href="contact_us_page.html">CONTACT US</a></h4>
         </div>
       </section>
              
@@ -89,12 +89,12 @@
   <script src="components/assets/js/plugins.js"></script>
   <script src="components/assets/js/main.js"></script>
   <script>
-    fetch("components/nav")
+    fetch("components/nav.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
         });
-    fetch("components/footer")
+    fetch("components/footer.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
