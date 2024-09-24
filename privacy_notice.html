@@ -78,7 +78,7 @@
           <h4 class="service_sub-header">9. Changes to This Privacy Notice</h4>
           <h4 class="service_body">Bangkok University reserves the right to update this Privacy Notice at any time. Changes will be communicated to you through our website or directly via email.</h4>
           <h4 class="service_sub-header">10. Contact Us</h4>
-          <h4>If you have any questions about this Privacy Notice or how we handle your personal information, please contact us at <a href="contact_us_page.html">CONTACT US</a></h4>
+          <h4>If you have any questions about this Privacy Notice or how we handle your personal information, please contact us at <a href="contact_us_page">CONTACT US</a></h4>
         </div>
       </section>
              
@@ -104,12 +104,12 @@
   <script src="components/assets/js/plugins.js"></script>
   <script src="components/assets/js/main.js"></script>
   <script>
-    fetch("components/nav.html")
+    fetch("components/nav")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
         });
-    fetch("components/footer.html")
+    fetch("components/footer")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
